@@ -1,0 +1,54 @@
+:root {
+    --dark-green: #1A9047;
+    --light-green: #2BC866;
+    --blue: #004AAD;
+
+  }
+
+body {
+    font-family: Helvetica;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid gray;
+    
+}
+
+.navBar ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navBar li {
+    padding: 8px;
+    color: var(--blue);
+    font-weight: bold; 
+}
+
+.navBar button {
+    border-radius: 20px;
+    border: 1px solid var(--dark-green);
+}
+
+#entrar {
+    background-color: white;
+    color: var(--dark-green);
+}
+
+#cadastre {
+    background-color:var(--dark-green);
+    color: white;
+}
+
