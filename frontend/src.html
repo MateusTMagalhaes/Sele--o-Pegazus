@@ -8,22 +8,110 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navBar">
+    <nav class="navBar flex">
         <span>
-            <img/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR4nO1YT0vcQBQfsAel9exFry14ECcrdPXQgWbGeqm3FEHtzuhlk1DqJ3Brj0IvercmXqoI/Qi91Fs/QFEXdOJRRT2I4iFlkg1dupv9O4nZMj94BIbkvfd7f8K8B4CCgoKCgkIF5tnWiMWdfZu7N7bn+okId28sz/lePNt5AaQ777kXiTleI86lsCmNQBD51JwPxeLunjQCiZZNHAHPue7acQ2zA40wX5Yga6UtEqBbQMx+9jSBCGmXDzJXYoMACX2AhJY1zL68fL08BLJIoNWMQsz4mL74XGoPtFsmjQiAOkCo9CT3hmqQsB/Be5j9EmfSeiBpAhHGyMLToJQI88d19h5ksYRAEwjHwyzQo9gsZJmAYRh9ENPfsVmI6wEZZSKDQNMsxPVAlggYzbKQ5RKKkCO00LAXsk7AaJaFxyJgt/HNu2/rwTeTc8XbniRgnTg+Mj8G/dmTBOwqUQRslQGmSug/a2Ke7lAvfoWo4+uKc1VDQCyb0s6C3alwZ7eGgNiUiWXTvy+b5W3/7cYnf2re8idmloPn7Oaab5a/SnXKbNGOxd3zD97OcIPVorsn9jWR0lfF+sO3GMplkTBbsBP4xJ3dWOfrAWL6OVRETyAu6GLEG9cZhoSdVm6GpZaVPYYdSNhxuBko6NXnuWlKoqutFAIkITsaZvdCwSiynlWfT80uDVYU33Xpe7J2osiIdNaNDGGHHSlOyw4kdC2qTaFMRChHlqb/1iZblUOAJmMnnzcG4oZ+MUsjVOiXQSCfpJ1QOS2JRgpqNXyuynI+bTsKCgogW/gDmt7ly4ctNgIAAAAASUVORK5CYII=">
         </span>
         <div>
             <ul>
-                <li>Home</li>
-                <li>Sobre nós</li>
-                <li>Parceiros</li>
-                <li>Ajuda</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
             </ul>
         </div>
         <div>
-            <button id="entrar">Entrar</button>
+            <button id="entrar" class="button">Entrar</button>
             <button id="cadastre">Cadastre-se</button>
         </div>
     </nav>
+    <div id="home" class="center">
+        <h1>Rastreie seu pedido!</h1>
+        <div>
+            <input type="text" placeholder="Código de rastreio">
+            <button> <img width="15" height="15" src="https://img.icons8.com/ios/50/EBEBEB/marker--v1.png" alt="marker--v1"/> Rastrear</button>
+        </div>
+        <img src="./Images/boxes.svg" />
+    </div>
+    <div id="sobre-nos" class="center">
+        <h1 class="big-margin">Veja como o Rastreio Express pode faclitar sua rotina</h1>
+        <h3 class="big-margin">As funcionaliades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística</h3>
+        <div id="acoes" class="flex">
+            <div class="acao">
+                <img src="./Images/search.svg"/>
+                <h2>Busque por uma encomenda</h2>
+                <p>Use o Rastreio Express para encontrar suas encomendas. Basta colar o código de rastreio no campo de buscas e aproveitar</p>
+            </div>
+            <div class="acao">
+                <img src="./Images/phone_loc.svg"/>
+                <h2>Acompanhe suas encomendas</h2>
+                <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difícies de entender</p>
+            </div>
+            <div class="acao">
+                <img src="./Images/notification_bell.svg"/>
+                <h2>Receba notificações</h2>
+                <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail</p>
+            </div>
+        </div>
+        <h2 class="big-margin">O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação.</h2>
+        <button id="cadastre-agora" class="big-margin">CADASTRE-SE AGORA</button>
+    </div>
+    <div class="green-background">
+        <div id="parceiros", class="center flex">
+            <div id="parceiros-esquerda">
+                <h1 class="white">A plataforma de rastreamento mais completa do marcado</h1>
+                <p>O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correios</p>
+                <p>Porém, quem faz envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo</p>
+                <div id="parceiros-logo" class="flex center">
+                    <img class="logo" src="./Images/logo-correios.png"/>
+                    <img class="logo" src="./Images/logo-azul-cargo-express.png"/>
+                    <img class="logo" src="./Images/jadlog-logo.png"/>
+                    <img class="logo" src="./Images/LATAN-cargo-logo.png"/>
+                </div>
+            </div>
+                
+            <img id="imagem-positivo" src="./Images/image_green_background.svg"/>
+        </div>
+    </div>
+    <div id="ajuda" class="center">
+        <div id="ajuda-cima" class="flex big-margin">
+            <img height="300px" src="./Images/need_help.svg" />
+            <div>    
+                <h1>Precisa de ajuda com algum rastreio?</h1>
+                <p>Veja o que fazer em cada  um dos casos:</p>
+            </div>
+        </div>
+        <div id="ajuda-baixo" class="flex">
+            <div class="ajuda-item">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/40C057/empty-hourglass.png" alt="empty-hourglass"/>
+                <h2>Estou esperando uma encomenda</h2>
+                <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio</p>
+                <p>Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para logistas</p>
+            </div>
+
+            <div class="ajuda-item">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/40C057/cardboard-box.png" alt="cardboard-box"/>
+                <h2>Enviei um pacote com etiqueta do Melhor Envio</h2>
+                <p>É muito fácil encontrar ajuda. Veja só:</p>
+                <ul>
+                    <li>Entre na sua conta Melhor Envio</li>
+                    <li>Vá até a opção Ajuda</li>
+                    <li>Escolha o assunto que melhor represeta sua dúvida e encontre o suporte que precisa</li>
+                </ul>
+            </div>
+
+            <div class="ajuda-item">
+                <img width="80" height="80" src="https://img.icons8.com/dotty/80/40C057/form.png" alt="form"/>
+                <h2>Comprei uma etiqueta diretamente com a transportadora</h2>
+                <p>Sugerimos que entre em contado com a empresa responsável pelo envio</p>
+            </div>
+
+            <div class="ajuda-item">
+                <img width="80" height="80" src="https://img.icons8.com/dotty/80/40C057/stack-of-money.png" alt="stack-of-money"/>
+                <h2>Eu vou pagar alguma taxa de uso ou mensalidade?</h2>
+                <p>Não! O Melhor Rastreio é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços</p>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
